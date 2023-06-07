@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  height: 100vh;
+  padding: 0px !important;
+  overflow-x: hidden;
+  scroll-padding-top: 64px;
+}
+
+@media screen and (max-width: 640px) {
+  #app-container {
+    height: 100dvh;
+    overflow-x: hidden;
+  }
+}
+
+/* NProgress */
+#nprogress .bar {
+  background: #B972E4 !important;
+  height: 5px;
+}
+
+#nprogress .peg {
+  box-shadow: 0px 20px 50px 0px rgba(185,114,228,0.6) !important;
+  -webkit-box-shadow: 0px 20px 50px 0px rgba(185,114,228,0.6) !important;
+  -moz-box-shadow: 0px 20px 50px 0px rgba(185,114,228,0.6) !important;
+}

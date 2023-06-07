@@ -1,0 +1,209 @@
+* {
+    background-image: URL('https://ae01.alicdn.com/kf/HTB1_gc8JpXXXXafXFXXq6xXFXXXs/3X5ft-fotografi-latar-belakang-cahaya-keren-Vinyl-warna-Background-1-x-1-5-m-gaya-kayu.jpg_Q90.jpg_.webphttps://images.pexels.com/photos/376533/pexels-photo-376533.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-size: cover;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: Courier;
+    color: red;
+}
+
+.menu {
+    font-size: ;
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom:1px solid #000000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color:black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.kolom {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.kolom .deskripsi {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: darkturquoise;
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: lightseagreen;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-biru {
+    background: #90E0EF;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    color: black;
+    cursor: progress;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background: rgb(17, 255, 0);
+    text-decoration: none;
+}
+
+
+a.tbl-pink:hover {
+    background: rgba(0, 251, 255, 0.368);
+    text-decoration: blue;
+    color: black;
+}
+
+p {
+    margin: 20px 10px 10px 10px;
+    padding: 10px 10px 10px 00px;
+}
+
+.tengah {
+    font-family: 'comic sans ms';
+    font-weight: 400px;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.Dokter-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-Dokter {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-Dokter img {
+    width: 90%;
+    border-radius: 50%;
+}
+
+.kartu-Dokter P {
+    font-family: 'comic sans ms';
+    font-weight: 800px;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+
+.perawatan-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-perawatan {
+    font-family: 'comic sans ms';
+    font-weight: 800px;
+    font-size: 25px;
+    text-align: center;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-perawatan img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    font-family: 'comic sans ms';
+    font-weight: 200;
+    font-size: 12px;
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #000000;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+    color: black;
+}

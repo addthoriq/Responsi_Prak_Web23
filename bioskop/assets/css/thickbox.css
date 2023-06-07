@@ -1,0 +1,48 @@
+.bg-thick{
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	position: fixed; 
+	background-color: rgba(0,0,0,0.7);
+}
+.bg-box{
+	width: 500px;
+	height: auto;
+	margin: 50px auto;
+	z-index: 99999999;
+	border-radius: 0px 0px 5px 5px;
+	background-color: #ffffff;
+}
+.bar{
+	width: 100%;
+	height: 45px;
+	background-color:#fff;
+}
+.bar p{
+	width: 40px;
+	padding: 9px 0px;
+	font-size: 18px;
+	font-weight: bold;
+	float: right;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+.bg-box .in-box{
+	padding: 20px;
+}
+.in-box input[type=text],.in-box input[type=password],.in-box input[type=email]{
+	width: 100%;
+	height: 40px;
+	border:1px solid #555;
+	margin: 5px 0px;
+	color: #555;
+	font-size:13px;
+	text-indent: 10px;
+}
+.in-box input[type=submit]{
+	width: 100px;
+	padding: 8px 0px;
+	margin: 15px 0px;
+	border:1px solid;
+}

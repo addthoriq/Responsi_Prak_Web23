@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Than.com</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      </head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Honkai Star-Rail</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="homepage.php".html>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="hsrtier.html">Tier List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hsrgacha.html">Gacha Simulator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hsrmap.html">Honkai Star-Rail Maps</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Herta</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+<div class="fullscreen">
+  <iframe src="https://hsr.hoyoverse.com/ua2?utm_source=SEA_google_SEA_search_UA2_Brand&hoyotrace_channel=ga_channel&gclid=Cj0KCQjwj_ajBhCqARIsAA37s0yZUfEnSjYLrQ88QjdijQWaRNTKiLgL5I2p3Kqm7PI1WMjazunYI4MaAgNKEALw_wcB" width="1460" height="720"></iframe>
+</div>
+<div
+class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+<!-- Copyright -->
+<div class="text-white mb-3 mb-md-0">
+  Than.cos © 2023. Wibu Save The World.
+</div>
+<!-- script -->
+<script>
+   // Selecting the iframe element
+   var frame = document.getElementById("Iframe");
+     
+   // Adjusting the iframe height onload event
+   frame.onload = function()
+   // function execute while load the iframe
+   {
+     // set the height of the iframe as 
+     // the height of the iframe content
+     frame.style.height = 
+     frame.contentWindow.document.body.scrollHeight + 'px';
+      
+
+    // set the width of the iframe as the 
+    // width of the iframe content
+    frame.style.width  = 
+     frame.contentWindow.document.body.scrollWidth+'px';
+         
+   }
+   </script>
+</html>

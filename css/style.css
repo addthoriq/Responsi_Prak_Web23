@@ -2,7 +2,7 @@
 
 /* membuat variabel */
 :root {
-    --main-color: #8e44ad;
+    --main-color: #1997FE;
     --footer-bg: #2f3034;
     --black: #222;
     --white: #fff;
@@ -65,7 +65,7 @@ section {
 }
 
 .heading.hero-item {
-    background: linear-gradient(to bottom, rgba(18, 17, 48, 1) 0%, rgba(18, 17, 48, 0.60) 50%, rgba(18, 17, 48, 0.4) 70%, rgba(18, 17, 48, 0.20) 100%), url('../images/hero-3.jpg');
+    background: linear-gradient(to bottom, rgba(18, 17, 48, 1) 0%, rgba(18, 17, 48, 0.60) 50%, rgba(18, 17, 48, 0.4) 70%, rgba(18, 17, 48, 0.20) 100%), url('../images/hero-4.jpg');
     min-height: 100vh;
     background-repeat: no-repeat;
 }
@@ -160,8 +160,16 @@ section {
     justify-items: center;
 }
 
+.navtop{
+    background: rgba(18, 17, 48, 0.5);
+}
+
+.navscroll{
+    background: rgba(18, 17, 48, 0.5);
+}
+
 .header .navbar {
-    background: rgba(255, 255, 255, 0.2);
+    /* 121130 */
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(12px);
@@ -192,9 +200,9 @@ section {
 }
 
 .header .navbar a {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-left: 2rem;
-    color: var(--black);
+    color: var(--white);
 }
 
 .header a img {
@@ -806,12 +814,16 @@ section {
 
     .header .nav-item {
         position: absolute;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
         top: 99%;
         left: 0;
         right: 0;
-        background: rgba(255, 255, 255, 0.2);
+        /* background: rgba(255, 255, 255, 0.2); */
         border-radius: 16px;
+        background: rgba(18, 17, 48, 0.8);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
@@ -832,7 +844,7 @@ section {
     }
 
     .header .navbar .title {
-        display: block;
+        display: flex;
         margin: 2rem;
         text-align: center;
     }

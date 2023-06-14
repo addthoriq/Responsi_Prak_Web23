@@ -16,13 +16,13 @@ if (isset($_GET['op'])) {
     $op = "";
 }
 
-if($op == 'delete'){
+if ($op == 'delete') {
     $id_beli = $_GET['id'];
     $sql1 = "DELETE FROM preorder_form where id = '$id_beli'";
     $q1 = mysqli_query($conn, $sql1);
-    if($q1){
+    if ($q1) {
         $sukses = "Berhasil hapus data";
-    }else{
+    } else {
         $error = "Gagal melakukan delete data";
     }
 }
@@ -46,11 +46,14 @@ if($op == 'delete'){
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- font unicons cdn link  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/solid.css">
+
     <!-- css style -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/myAcc.css">
 </head>
 
-<body>
+<body class="bg_section">
     <!-- header section start -->
     <section class="header">
         <nav class="navbar">
@@ -71,111 +74,143 @@ if($op == 'delete'){
     </section>
     <!-- header section end -->
 
-    <div class="myAccount">
-        <div class="container d-flex justify-content-center align-items-center">
+    <!-- content section start  -->
+    <div class="section">
+        <div class="container">
+            <div class="row full-height justify-content-center">
+                <div class="col-12 text-center align-self-center py-5">
+                    <div class="section pb-5 pt-5 pt-sm-2 text-center">
 
-            <div class="card border border-dark">
+                        <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+                        <label for="reg-log"></label>
+                        <div class="card-3d-wrap mx-auto">
+                            <div class="card-3d-wrapper">
+                                <div class="card-front">
+                                    <div class="center-wrap">
+                                        <div class="myAccount">
+                                            <!-- <h6 class="text-center">
+                                                <span>Profile</span>
+                                            </h6> -->
+                                            <div class="container d-flex justify-content-center align-items-center">
 
-                <div class="upper">
+                                                <div class="card border border-dark">
 
-                    <img src="https://i.imgur.com/Qtrsrk5.jpg" class="img-fluid">
+                                                    <div class="upper">
 
-                </div>
+                                                        <!-- <img src="images/hero-2.jpg" class="img-fluid"> -->
 
-                <div class="user text-center">
+                                                    </div>
 
-                    <div class="profile">
+                                                    <div class="user text-center">
 
-                        <img src="https://i.imgur.com/JgYD2nQ.jpg" class="rounded-circle" width="80">
+                                                        <div class="profile">
 
+                                                            <img src="images/person2.jpg" class="rounded-circle"
+                                                                width="80">
+
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="mt-3 text-center">
+
+                                                        <h4 class="mb-1 mt-0">
+                                                            <?php echo $row["username"] ?>
+                                                        </h4>
+                                                        <span class="text-muted d-block mb-2">Los Angles</span>
+                                                        <a href="logout.php">
+                                                            <button class="btn mb-5">Log Out</button>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="table-responsive">
+                                                        <table class="table"
+                                                            style="font-size: 15px; text-align: center;">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">ID</th>
+                                                                    <th scope="col">Nama Item</th>
+                                                                    <th scope="col">Quantity</th>
+                                                                    <th scope="col">Harga</th>
+                                                                    <th scope="col">Jumlah</th>
+                                                                    <th scope="col">Aksi</th>
+                                                                </tr>
+                                                            <tbody>
+                                                                <?php
+                                                                $sql2 = "SELECT preorder_form.id, merch_item.nama_item, preorder_form.jumlah, merch_item.harga, (merch_item.harga * preorder_form.jumlah) AS total FROM preorder_form JOIN merch_item ON preorder_form.item = merch_item.id_item WHERE preorder_form.id_user = '$id' ORDER BY id ASC";
+                                                                $q2 = mysqli_query($conn, $sql2);
+                                                                while ($r2 = mysqli_fetch_array($q2)) {
+                                                                    $id_transaksi = $r2['id'];
+                                                                    $nama_item = $r2['nama_item'];
+                                                                    $quantity = $r2['jumlah'];
+                                                                    $harga = $r2['harga'];
+                                                                    $jumlah = $r2['total'];
+                                                                    ?>
+                                                                    <tr>
+                                                                        <th scope="row">
+                                                                            <?php echo $id_transaksi ?>
+                                                                        </th>
+                                                                        <td scope="row">
+                                                                            <?php echo $nama_item ?>
+                                                                        </td>
+                                                                        <td scope="row">
+                                                                            <?php echo $quantity ?>
+                                                                        </td>
+                                                                        <td scope="row">
+                                                                            <?php echo $harga ?>
+                                                                        </td>
+                                                                        <td scope="row">
+                                                                            <?php echo $jumlah ?>
+                                                                        </td>
+                                                                        <td scope="row">
+                                                                            <a
+                                                                                href="preorder.php?op=edit&id=<?php echo $id_transaksi ?>">
+                                                                                <button type="button" class="btn"
+                                                                                    style="padding: 6px 12px; font-size: 10px; width: 10vh; margin-top: 0;">Edit</button>
+                                                                            </a>
+                                                                            <a href="myAccount.php?op=delete&id=<?php echo $id_transaksi ?>"
+                                                                                onclick="return confirm('Apakah anda yakin untuk menghapus item ini?')">
+                                                                                <button type="button" class="btn"
+                                                                                    style="padding: 6px 12px; font-size: 10px; width: 10vh; margin-top: 0;">Delete</button>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <?php
+                                                                }
+                                                                ?>
+                                                            </tbody>
+                                                            </thead>
+                                                        </table>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="center-wrap">
+                                        <div class="card-body">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                </div>
-
-
-                <div class="mt-5 text-center">
-
-                    <h4 class="mb-0 mt-5">
-                        <?php echo $row["username"] ?>
-                    </h4>
-                    <span class="text-muted d-block mb-2">Los Angles</span>
-                    <a href="logout.php">
-                    <button class="btn">Log Out</button>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- table section start -->
-        <!-- untuk menampilkan data -->
-        <div class="card" style="margin: auto; width: 80%;">
-            <div class="card-header text-white bg-secondary" style="font-size: 15px;">
-                Your Pre-order item list
-            </div>
-            <div class="card-body">
-                <div class="table-responsive">
-                <table class="table" style="font-size: 15px; text-align: center;">
-                    <thead>
-                        <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Nama Item</th>
-                            <th scope="col">Quantity</th>
-                            <th scope="col">Harga</th>
-                            <th scope="col">Jumlah</th>
-                            <th scope="col">Aksi</th>
-                        </tr>
-                    <tbody>
-                        <?php
-                        $sql2 = "SELECT preorder_form.id, merch_item.nama_item, preorder_form.jumlah, merch_item.harga, (merch_item.harga * preorder_form.jumlah) AS total FROM preorder_form JOIN merch_item ON preorder_form.item = merch_item.id_item WHERE preorder_form.id_user = '$id' ORDER BY id ASC";
-                        $q2 = mysqli_query($conn, $sql2);
-                        while ($r2 = mysqli_fetch_array($q2)) {
-                            $id_transaksi = $r2['id'];
-                            $nama_item = $r2['nama_item'];
-                            $quantity = $r2['jumlah'];
-                            $harga = $r2['harga'];
-                            $jumlah = $r2['total'];
-                            ?>
-                            <tr>
-                                <th scope="row">
-                                    <?php echo $id_transaksi ?>
-                                </th>
-                                <td scope="row">
-                                    <?php echo $nama_item ?>
-                                </td>
-                                <td scope="row">
-                                    <?php echo $quantity ?>
-                                </td>
-                                <td scope="row">
-                                    <?php echo $harga ?>
-                                </td>
-                                <td scope="row">
-                                    <?php echo $jumlah ?>
-                                </td>
-                                <td scope="row">
-                                    <a href="preorder.php?op=edit&id=<?php echo $id_transaksi ?>">
-                                        <button type="button" class="btn btn-warning"
-                                            style="padding: 6px 12px; font-size: 10px; width: 10vh; margin-top: 0;">Edit</button>
-                                    </a>
-                                    <a href="myAccount.php?op=delete&id=<?php echo $id_transaksi ?>"
-                                        onclick="return confirm('Apakah anda yakin untuk menghapus item ini?')">
-                                        <button type="button" class="btn btn-danger"
-                                            style="padding: 6px 12px; font-size: 10px; width: 10vh; margin-top: 0;">Delete</button>
-                                    </a>
-                                </td>
-                            </tr>
-                            <?php
-                        }
-                        ?>
-                    </tbody>
-                    </thead>
-                </table>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- content section end  -->
+
+
+    <!-- table section start -->
+    <!-- untuk menampilkan data -->
+
     <!-- table section End -->
     <div class="separator" style="height: 5vh;"></div>
     </div>

@@ -3,6 +3,9 @@ let navbar = document.querySelector('.header .navbar');
 let header = document.querySelector('.header');
 let navbarItem = document.querySelector('.nav-item');
 console.log(navbar);
+const url = window.location.pathname.split('/')[2];
+navbar.classList.add('navtop');
+
 
 menu.onclick = function(){
     menu.classList.toggle('fa-times');
@@ -15,8 +18,12 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
     if (window.scrollY > 5) {
       navbar.classList.add('spacing-navbar');
+      navbar.classList.remove('navtop');
+      navbar.classList.add('navscroll');
     } else {
       navbar.classList.remove('spacing-navbar');
+      navbar.classList.add('navtop');
+      navbar.classList.remove('navscroll');
     }
 };
 

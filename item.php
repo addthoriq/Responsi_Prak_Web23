@@ -67,7 +67,7 @@
                     <img src="images/item-2.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>Pavolia Reine Key Chain</h3>
+                    <h3>Airani Iofifteen</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, tempora.</p>
                     <a href="preorder.php" class="btn">pre-order now</a>
                 </div>
@@ -78,7 +78,7 @@
                     <img src="images/item-3.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>Pavolia Reine Key Chain</h3>
+                    <h3>Ayunda Risu Key Chain</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, tempora.</p>
                     <a href="preorder.php" class="btn">pre-order now</a>
                 </div>
@@ -89,7 +89,7 @@
                     <img src="images/item-4.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>Pavolia Reine Key Chain</h3>
+                    <h3>Airani Iofifteen</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, tempora.</p>
                     <a href="preorder.php" class="btn">pre-order now</a>
                 </div>
@@ -100,7 +100,7 @@
                     <img src="images/item-5.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>Pavolia Reine Key Chain</h3>
+                    <h3>Kobo Kanaeru</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, tempora.</p>
                     <a href="preorder.php" class="btn">pre-order now</a>
                 </div>
@@ -111,7 +111,7 @@
                     <img src="images/item-6.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>Pavolia Reine Key Chain</h3>
+                    <h3>Moona Key Chain</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, tempora.</p>
                     <a href="preorder.php" class="btn">pre-order now</a>
                 </div>
@@ -122,7 +122,7 @@
                     <img src="images/item-7.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>Pavolia Reine Key Chain</h3>
+                    <h3>Vestia Zeta Key Chain</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, tempora.</p>
                     <a href="preorder.php" class="btn">pre-order now</a>
                 </div>
@@ -133,7 +133,7 @@
                     <img src="images/item-8.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>Pavolia Reine Key Chain</h3>
+                    <h3>Ollie Key Chain</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, tempora.</p>
                     <a href="preorder.php" class="btn">pre-order now</a>
                 </div>
@@ -144,7 +144,7 @@
                     <img src="images/item-9.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>Pavolia Reine Key Chain</h3>
+                    <h3>Ollie Key Chain</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, tempora.</p>
                     <a href="preorder.php" class="btn">pre-order now</a>
                 </div>
@@ -155,7 +155,7 @@
                     <img src="images/item-10.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>Pavolia Reine Key Chain</h3>
+                    <h3>Anya Key Chain</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, tempora.</p>
                     <a href="preorder.php" class="btn">pre-order now</a>
                 </div>
@@ -166,7 +166,7 @@
                     <img src="images/item-11.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>Pavolia Reine Key Chain</h3>
+                    <h3>Kaela Key Chain</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, tempora.</p>
                     <a href="preorder.php" class="btn">pre-order now</a>
                 </div>
@@ -177,7 +177,7 @@
                     <img src="images/item-12.png" alt="">
                 </div>
                 <div class="content">
-                    <h3>Pavolia Reine Key Chain</h3>
+                    <h3>Moona Key Chain</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, tempora.</p>
                     <a href="preorder.php" class="btn">pre-order now</a>
                 </div>

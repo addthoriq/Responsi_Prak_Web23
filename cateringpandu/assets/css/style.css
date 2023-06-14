@@ -1,0 +1,71 @@
+/* --------- Header --------- */
+#header{
+	padding: 10px 0;
+	background: #222;
+	color: #fff;
+}
+
+/* --------- Menu --------- */
+#menu{
+	background: #222;
+	margin-bottom: 20px;
+	color: #fff;
+}
+#menu .navbar{
+	margin-bottom: 0;
+	border-right: none;
+	border-left: none;
+	
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#menu .dropdown-menu{
+	background: #000;
+}
+#menu .dropdown-menu a{
+	color: #888;
+	padding: 10px;
+}
+#menu .dropdown-menu a:hover{
+	background: #222;
+	color: #fff;
+}
+#menu .search{
+	margin: 10px -20px 10px 0;
+}
+
+/* -------- Sidebar ---------- */
+
+.nav-tabs{
+	background: #ddd;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+.tab-content{
+	border: 1px solid #ccc;
+	border-top: none;
+	margin-bottom: 20px;
+}
+.tab-content ul{
+	padding: 0;
+}
+.tab-content li{
+	list-style: none;
+	border-bottom: 1px solid #eee;
+	padding: 10px;
+	overflow: hidden;
+}
+.tab-content img{
+	width: 80px;
+	height: 60px;
+	float: left;
+	margin-right: 10px;
+}
+/* --------- Footer ---------- */
+#footer{
+	background: #222;
+	padding: 10px;
+	margin-top: 20px;
+	color: #fff;	
+}

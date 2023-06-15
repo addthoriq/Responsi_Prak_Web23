@@ -1,0 +1,149 @@
+*{
+	font-family: open sans;
+	margin:0px;
+	padding: 0px;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	background-color: #ecf0f5;
+}
+.bar-top{
+	width: 100%;
+	height: 50px;
+	float: left;
+	background-color: #3c8dbc;
+}
+.side-menu{
+	width: 230px;
+	height: 180%;
+	position: absolute;
+	float: left;
+	background-color: #222d32;
+}
+.bar-top-menu{
+	width: 100%;
+	height: 50px;
+	float: left;
+	background-color: #357ca5;
+}
+.avatar{
+	width: 100%;
+	height: 200px;
+	color: #fff;
+	text-align: center;
+	background-color: #222d32;
+}
+.avatar img{
+	width: 100%;
+	height: 120px;
+}
+.main-menu p{
+	width: 100%;
+	padding: 10px 0px;
+	color: #576368;
+	font-size: 12px;
+	text-indent: 20px;
+	background-color: #1a2226;
+	text-transform: uppercase;
+}
+.side-menu ul a{
+	list-style-type: none;
+	text-decoration: none;
+}
+.side-menu ul a li{
+	list-style-type: none;
+	text-decoration: none;
+	list-style: none;
+	width: 100%;
+	padding: 10px 0px;
+	text-indent: 10px;
+	cursor: pointer;
+	color: #ffffff;
+	transition-property: all;
+	transition-duration: 0.3s
+
+}
+.side-menu ul li:hover{
+	background-color: #54595e;
+	transition-property: all;
+	transition-duration: 0.3s
+}
+.content{
+	width: 78%;
+	height: auto;
+	background-color: #ffffff;
+	float: right;
+	overflow: auto;
+	padding: 0px 20px 20px 20px;
+	margin: 20px 0px 0px 20px; 
+}
+.content h1{
+	width: 100%;
+	font-family: segoe ui;
+	border-bottom: 1px solid #999999;
+	font-weight: 100;
+	color: #594f4f;
+	font-size: 50px;
+}
+#table{
+	width: 100%;
+	color: #444;
+	text-align: center;
+}
+#table th{
+	background-color: #434547;
+	color: #ffffff;
+	border:none;
+}
+#table td{
+	border-bottom: 1px solid #666;
+}
+#btn-hapus{
+	width: 60px;
+	padding:6px 0px ;
+	color: #fff;
+	float: right;
+	margin: 0px 2px;
+	cursor: pointer;
+	border: 1px solid #c0392b;
+	background-color: #c0392b;
+	-webkit-transition:all 0.3s;
+}
+#btn-tambah{
+	width: 100px;
+	padding:6px 0px;
+	float: right;
+	margin:15px;
+	border:1px solid #16a085;
+	background-color: #16a085;
+	color: #fff;
+	cursor: pointer;
+	-webkit-transition:all 0.3s;
+}
+#btn-tambah:hover{
+	background-color: #1abc9c;
+	border: 1px solid #1abc9c;
+	-webkit-transform:all 0.3s;
+}
+#btn-hapus:hover{
+	background-color: #e74c3c;
+	border: 1px solid #e74c3c;
+	-webkit-transition:all 0.3s;
+}
+#btn-edit{
+	width: 60px ;
+	padding: 6px 0px;
+	float: right;
+	cursor: pointer;
+	color: #fff;
+	margin:0px 2px;
+	background-color: #2980b9;
+	border: 1px solid #2980b9;
+	-webkit-transition:all 0.3s;
+}
+#btn-edit:hover{
+	background-color: #3498db;
+	border: 1px solid #3498db;
+	-webkit-transition:all 0.3s;
+}

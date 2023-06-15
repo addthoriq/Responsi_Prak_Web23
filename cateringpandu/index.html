@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catering Pandu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+
+
+    <!--==============================header=================================-->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="img/beranda/logo.png" width="100%">
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.php">Home</a></li>
+                <li><a href="menu.php">Menu</a></li>
+                <li><a href="about.php">Tentang Kami</a></li>
+                <li><a href="contact.php">Hubungi Kami</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li data-toggle="modal" data-target="#mydaftar"><a href="#"><span class="glyphicon glyphicon-user"></span> Daftar</a></li>
+                <li data-toggle="modal" data-target="#mylogin"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Modal tampil -->
+
+    <!-- Modal login -->
+    <div id="mylogin" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Silahkan Login</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form action="proses_masuk.php" name="modal_popup" enctype="multipart/form-data" method="POST">
+
+                        <div class="form-group">
+                            <label for="InputUser">Username</label>
+                            <input type="text" class="form-control" name="InputUser" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputPassword">Password</label>
+                            <input type="password" class="form-control" name="InputPassword" placeholder="Password">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" name="login" value="login" class="btn btn-success">Login</button>
+                            <button type="reset" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal daftar -->
+    <div id="mydaftar" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Daftar pelanggan catering</h4>
+                </div>
+                <div class="modal-body">
+
+                    <script>
+                        function hanyaAngka(evt) {
+                            var charCode = (evt.which) ? evt.which : event.keyCode
+                            if (charCode > 31 && (charCode < 48 || charCode > 57))
+
+                                return false;
+                            return true;
+                        }
+                    </script>
+
+                    <form action="proses_save.php" name="modal_popup" enctype="multipart/form-data" method="POST">
+                        <div class="form-group">
+                            <label for="InputUser">Username</label>
+                            <input type="text" class="form-control" name="InputUser" placeholder="Username" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputPassword">Password</label>
+                            <input type="password" class="form-control" name="InputPassword" placeholder="Password" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputNama">Nama Lengkap</label>
+                            <input type="text" class="form-control" name="InputNama" placeholder="Nama Lengkap" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputNIK">NIK (sesuai KTP/Passport)</label>
+                            <input type="text" onkeypress="return hanyaAngka(event)" class="form-control" name="InputNIK" placeholder="No NIK" required/>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Jenis kelamin</label>
+                            <select name="InputJk" class="form-control" required/>
+                            <option value="Laki - laki">Laki - laki</option>
+                            <option value="perempuan">Perempuan</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputNomorhp">No HP</label>
+                            <input type="text" onkeypress="return hanyaAngka(event)" class="form-control" name="InputNomorhp" placeholder="No HP" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputEmail">Email address</label>
+                            <input type="email" class="form-control" name="InputEmail" placeholder="Email" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputAlamat">Alamat</label>
+                            <textarea class="form-control" rows="3" name="InputAlamat" placeholder="Alamat Rumah" required/></textarea>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+      	<input type="checkbox" value="yes" required/>dengan ini anda menyetujui persyratan kami sebagai pelanggan yang tehormat bagi toko CATERINGUMAR
+      </label>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-success">Daftar</button>
+                            <button type="reset" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end modal daftar -->
+
+    <div id="tampil" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"><b> TATA CARA PEMESANAN CATERING </b></h4>
+                </div>
+                <div class="modal-body">
+
+                    <h4>1. mendaftar</h4>
+                    <p> mendaftarkan diri di Catering umar sebagai pelanggan.</p> <br>
+                    <h4>2. isi formulir</h4>
+                    <p> isi formulir yang sudah tertera</p> <br>
+                    <h4> 3. log in</h4>
+                    <p> kemudian silahkan log in</p><br>
+                    <h4> 4. pesan</h4>
+                    <p> silahkan klik tombol pesan jika anda ingin memesan di catering kami</p><br>
+                    <h4> 5. pilih / pemesanan makanan </h4>
+                    <p> silahkan anda memesan makanan yang sudah ada dalam daftar yang kami sediakan </p><br>
+                    <h4>6. pilih tombol pesan</h4>
+                    <p>jika sudah memilih makanan silahkan klik tombol pesan, maka pesanan anda akan kami proses</p><br>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Sudah Mengerti ?</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            $('#tampil').modal('show');
+        </script>
+    </div>
+    <!-- /.modal -->
+
+    <!--==============================header=================================-->
+    <!--==============================content=================================-->
+    <content id="content">
+        <div class="container">
+            <div id="slideshow" class="carousel slide" data-ride="carousel">
+                <!-- Indicators, Ini adalah Tombol BULET BULET dibawah. item ini dapat dihapus jika tidak diperlukan -->
+                <ol class="carousel-indicators">
+                    <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+                    <li data-target="#slideshow" data-slide-to="1"></li>
+                    <li data-target="#slideshow" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides, Ini adalah Tempat Gambar-->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/beranda/sate.jpg" alt="slideshow">
+                        <!-- Gambar -->
+                        <div class="carousel-caption">
+                            <!-- Penjelasan -->
+                            <h3>Sate Ayam</h3>
+                            <p>dilengkapi dengan lontong serta disuguhkan dengan sangat berkualitas</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/beranda/gorengan.jpg" alt="slideshow">
+                        <div class="carousel-caption">
+                            <h3>Gorengan isi</h3>
+                            <p>dengan berbagai macam jenis dan kelezatannya</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/beranda/minuman.jpg" alt="slideshow">
+                        <div class="carousel-caption">
+                            <h3>Minuman</h3>
+                            <p>menjadikan sebagai pelepas dahaga yang menyejukkan </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controls, Ini adalah Panah Kanan dan Kiri. -->
+                <a class="left carousel-control" href="#slideshow" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#slideshow" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+            <hr>
+            <!-- thumbnail-->
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/beranda/makanan_pembuka.jpg" class="thumbnail" width="300px" height="200px">
+
+                        <div class="caption">
+                            <h3 align="center"><b>Makanan Pembuka</b></h3>
+                        </div>
+                        hidangan makanan pembuka kami suguhkan untuk memiliki cita rasa yang khas dengan ini dapat membangkitkan selera makanan anda sebelum memakan hidangan utama
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/beranda/makanan_utama.jpg" class="thumbnail" width="300px" height="200px">
+
+                        <div class="caption">
+                            <h3 align="center"><b>Makanan Utama</b></h3>
+                        </div>
+                        makanan hidangan utama cukup bervariasi bukan hanya makanan indonesia yang identik dengan nasi akan tetapi juga olahan kentang dan pasta sesuai selera anda
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/beranda/makanan_penutup.jpg" class="thumbnail" width="300px" height="200px">
+
+                        <div class="caption">
+                            <h3 align="center"><b>Makanan Penutup</b></h3>
+                        </div>
+                        makanan penutup kami sangatlah beragam bukan hanya hidangan tradisional akan tetapi tradisional
+                    </div>
+                </div>
+            </div>
+        </div>
+    </content>
+    <!--==============================content=================================-->
+    <!--==============================footer=================================-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p align="center">Copyright &copy; Catering Pandu 2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<!--==============================footer=================================-->
